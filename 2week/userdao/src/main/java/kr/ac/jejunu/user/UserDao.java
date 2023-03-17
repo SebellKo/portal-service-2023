@@ -14,7 +14,7 @@ public class UserDao {
         Class.forName("com.mysql.cj.jdbc.Driver");
         // Connection 맺고
         Connection connection = DriverManager.getConnection
-                ("jdbc:mysql://localhost:3306", "root", "Fulfilled7418!");
+                ("jdbc:mysql://localhost:3306", "root", "rootsejong");
         // 쿼리 만들고
         PreparedStatement preparedStatement = connection.prepareStatement
                 ("select id, name, password from userinfo where ?");
